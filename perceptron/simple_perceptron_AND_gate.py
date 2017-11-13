@@ -39,7 +39,7 @@ if __name__ == "__main__":
     training_x = np.array([[-1, -1], [-1, 1], [1, -1], [1, 1]])
     training_y = np.array([[-1], [-1], [-1], [1]])
 
-    for epoch in range(10):
+    for epoch in range(25):
         total_error = 0
         for example in range(len(training_x)):
             y_predicted = perceptron.feed_forward(training_x[example])
