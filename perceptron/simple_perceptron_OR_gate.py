@@ -6,7 +6,7 @@ class Perceptron:
         self.weights = np.random.rand(1, number_of_inputs + 1)[0]
         self.learning_rate = learning_rate
 
-    """A step function where non-negative values are returned by a 1 and negative values are retruend by a -1"""
+    """A step function where non-negative values are returned by a 1 and negative values are returned by a -1"""
     def activate(self, z):
         if z >= 0:
             return 1
